@@ -114,7 +114,15 @@ $$
 * **Score > 0.20**: 需修正 (Needs Improvement)
 
 ---
+## 🎥 成果展示 (Demo)
 
+下圖展示了實際投球軌跡（藍線）與最佳路徑（橘色虛線）的自動對齊與比對結果：
+
+![最佳路徑比對圖](Analysis/bowling_data/best.png)
+
+*(上圖為系統運算出的 3D 軌跡圖，顯示了練習軌跡經過 Kabsch 演算法校正後與標準動作的疊合情形)*
+
+---
 ## 📂 專案結構 (Folder Structure)
 
 ```text
