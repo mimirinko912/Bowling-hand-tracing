@@ -93,12 +93,19 @@
 
 ### 1. 物理積分 (Physics Integration)
 利用牛頓運動定律，將原始加速度數據進行兩次積分：
-$$ a(t) \xrightarrow{\int} v(t) \xrightarrow{\int} p(t) $$
+
+$$
+a(t) \xrightarrow{\int} v(t) \xrightarrow{\int} p(t)
+$$
+
 *包含去重力補償 (Gravity Compensation) 以消除靜止偏差。*
 
 ### 2. 軌跡對齊 (Kabsch Algorithm)
 為了公平比較兩次投球的形狀（忽略站位與握球角度差異），我們使用 SVD 分解計算最佳旋轉矩陣 $R$ 與位移向量 $t$，使：
-$$ \min \sum \| (R \cdot P_{practice} + t) - P_{golden} \|^2 $$
+
+$$
+\min \sum \| (R \cdot P_{practice} + t) - P_{golden} \|^2
+$$
 
 ### 3. 評分系統 (MSE Scoring)
 計算對齊後的均方誤差 (Mean Squared Error)：
